@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatCoin Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Главная страница -->
+    <div class="page main-page">
+        <img src="https://i.ibb.co/1QZtmD9/dream-Trading-Card-photoaidcom-cropped.png" alt="Logo" class="logo">
+        <div class="balance" id="balance">4,000 RATC</div>
+        <div class="navigation">
+            <button onclick="showPage('main')" class="button left-btn">Главная</button>
+            <button onclick="showPage('tasks')" class="button right-btn">Задания</button>
+        </div>
+    </div>
+
+    <!-- Страница Задания -->
+    <div class="page tasks-page" style="display:none;">
+        <h1>Задания</h1>
+        <p>Подпишитесь на наш канал и получите 500 RATC!</p>
+        <a href="https://t.me/RatcCoin" class="button" target="_blank" onclick="completeTask()">Подписаться и получить 500 RATC</a>
+        <div class="navigation">
+            <button onclick="showPage('main')" class="button left-btn">Главная</button>
+            <button onclick="showPage('tasks')" class="button right-btn">Задания</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

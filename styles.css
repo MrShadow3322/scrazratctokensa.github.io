@@ -1,0 +1,55 @@
+body {
+    font-family: 'CustomFont', sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: balanceAnimation 2s infinite;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 250px; /* Ширина блока с кнопками увеличена для расстояния */
+}
+
+.button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: darkorange;
+}
+
+@keyframes balanceAnimation {
+    0% { color: white; }
+    50% { color: yellow; }
+    100% { color: white; }
+}
